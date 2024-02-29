@@ -1,0 +1,108 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+.header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.profile-section {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-size: 24px;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.left-section, .right-section {
+    width: calc(50% - 1rem);
+}
+
+/* For the left section */
+.left-section {
+    background: #fff;
+    padding: 1rem;
+}
+
+.skills-list, .job-description {
+    list-style-type: none;
+}
+
+/* For the right section */
+.right-section {
+    background: #fff;
+    padding: 1rem;
+}
+
+.job {
+    margin-bottom: 1rem;
+}
+
+/* Job title styles */
+.job h4 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Date styles for jobs */
+.job p {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .left-section {
+        padding-right: 0;
+    }
+
+    .right-section {
+        padding-left: 0;
+    }
+}
